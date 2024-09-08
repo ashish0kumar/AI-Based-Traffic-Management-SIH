@@ -1,12 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-input[type="file"] {
-  margin: 20px;
+.App h1 {
+    font-size: 24px;
+    padding: 10px 0 5px 100px;
 }
 
-button {
-  padding: 10px 20px;
+.main-container {
+    display: flex;
+    padding: 0 100px;
+    gap: 100px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left {
+    width: 800px;
+}
+
+.hero {
+    /* width: 800px; */
+    margin: 50px auto;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.hero p  {
+    font-size: 16px;
+}
+
+.upload input[type="file"] {
+  margin: 10px 20px 20px 0;
   font-size: 16px;
+  width: 50%;
+  background-color: #f1f3f4;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.upload, .result {
+    /* width: 800px; */
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.upload h2, .result h2 {
+    font-size: 24px;
+}
+
+.upload p, .result p {
+    font-size: 16px;
+}
+
+.upload button {
+    background: #000;
+    width: 53%;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.loader {
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.result ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.result li {
+    font-size: 16px;
+    margin: 5px 0;
 }

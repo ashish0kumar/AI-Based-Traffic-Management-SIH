@@ -40,32 +40,51 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Smart Traffic Management System</h1>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="file" 
-          multiple 
-          accept="video/*" 
-          onChange={handleFileChange} 
-        />
-        <button type="submit">Upload Videos</button>
-      </form>
-      {loading && <p>Loading...</p>}
-      {result && !result.error && (
-        <div>
-          <h2>Optimal Green Times:</h2>
-          <p>North: {result.north} seconds</p>
-          <p>South: {result.south} seconds</p>
-          <p>West: {result.west} seconds</p>
-          <p>East: {result.east} seconds</p>
+      <h1>Smart Traffic</h1>
+      <hr/>
+
+      <div className='main-container'>
+        <div className='left'>
+          <section id="hero" className="hero">
+            <h2>Optimize Traffic Flow with AI</h2>
+            <p>Enhance your city's traffic management with our smart adaptive system. Our technology optimizes traffic light timings based on real-time data to reduce congestion and improve traffic flow.</p>
+          </section>
+          <section id="upload" className="upload">
+            <h2>Upload Your Traffic Videos</h2>
+            <p>Select 4 videos showing different roads at an intersection. Our system will analyze these videos to provide optimized traffic light timings for smoother traffic flow.</p>
+            <form onSubmit={handleSubmit}>
+              <input 
+                type="file" 
+                multiple 
+                accept="video/*" 
+                onChange={handleFileChange} 
+              />
+              <br/>
+              <button type="submit">Run Model</button>
+            </form>
+          </section>
         </div>
-      )}
-      {result && result.error && (
-        <div>
-          <h2>Error:</h2>
-          <p>{result.error}</p>
-        </div>
-      )}
+
+        {loading && <p className='loader'>Processing videos, it may take a few minutes...</p>}
+        {result && !result.error && (
+          <section id="result" className="result">
+          <h2>Optimization Results</h2>
+          <p>Your traffic light timings have been optimized. Here are the recommended green times for each direction:</p>
+          <ul>
+            <li>North: <span id="north-time">{result.north}</span> seconds</li>
+            <li>South: <span id="south-time">{result.south}</span> seconds</li>
+            <li>West: <span id="west-time">{result.west}</span> seconds</li>
+            <li>East: <span id="east-time">{result.east}</span> seconds</li>
+          </ul>
+        </section>
+        )}
+        {result && result.error && (
+          <div>
+            <h2>Error:</h2>
+            <p>{result.error}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
