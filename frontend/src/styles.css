@@ -12,6 +12,10 @@ body {
     padding: 10px 0 5px 100px;
 }
 
+hr {
+    color: #f1f3f4;
+}
+
 .main-container {
     display: flex;
     padding: 0 100px;
@@ -68,6 +72,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .loader {
@@ -82,6 +87,7 @@ body {
     padding-left: 20px;
     background-color: #f1f3f4;
     border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 .result .placeholder {
