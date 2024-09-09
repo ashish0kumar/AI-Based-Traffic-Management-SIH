@@ -21,7 +21,7 @@ The Smart Adaptive Traffic Management System leverages AI and computer vision to
 - YOLOv4 weights and configuration files
 - Required Python packages (listed in requirements.txt)
 
-## Installation
+## Local Setup
 
 Clone the repository:
 
@@ -43,6 +43,9 @@ Start the frontend server
 cd frontend
 npm start
 ```
+
+Upload Traffic Videos:
+Use the web interface to upload 4 traffic videos. The system will process the videos and display optimized green light times based on the analysis.
 
 ## Acknowledgments
 
