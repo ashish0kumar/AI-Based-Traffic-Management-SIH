@@ -7,8 +7,8 @@ The Smart Adaptive Traffic Management System leverages AI and computer vision to
 
 ## 📸 Screenshots
 
-![1](screenshots/1.png)
-![2](screenshots/2.png)
+![1](screenshots/1.png)<br/><br/>
+![2](screenshots/2.png)<br/><br/>
 ![3](screenshots/3.png)
 
 
@@ -44,13 +44,13 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Start the frontend server
+Start the frontend server:
 ```bash
 cd frontend
 npm start
 ```
 
-Upload Traffic Videos <br/>
+Upload Traffic Videos: <br/>
 Use the web interface to upload 4 traffic videos. The system will process the videos and display optimized green light times based on the analysis.
 
 ## 🙏 Acknowledgments
