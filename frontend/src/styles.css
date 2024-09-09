@@ -25,7 +25,6 @@ body {
 }
 
 .hero {
-    /* width: 800px; */
     margin: 50px auto;
 }
 
@@ -48,7 +47,6 @@ body {
 }
 
 .upload, .result {
-    /* width: 800px; */
     margin: auto;
     margin-bottom: 50px;
 }
@@ -79,6 +77,21 @@ body {
 
 .result {
     margin-top: 30px;
+    width: 50%;
+    height: 400px;
+    padding-left: 20px;
+    background-color: #f1f3f4;
+    border-radius: 10px;
+}
+
+.result .placeholder {
+    text-align: center;
+    margin: 130px 0;
+    font-size: 20px;
+}
+
+.result p span {
+    font-size: 40px;
 }
 
 .result ul {
@@ -89,4 +102,24 @@ body {
 .result li {
     font-size: 16px;
     margin: 5px 0;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 0 30px;
+        gap: 30px;
+    }
+
+    .upload button {
+        width: 90%;
+    }
+
+    .upload input[type="file"] {
+        width: 85%;
+    }
+
+    .result {
+        width: 80%;
+        padding: 20px;
+    }
 }
