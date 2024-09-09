@@ -1,23 +1,23 @@
 # AI-Based-Traffic-Management-SIH
 An AI based traffic management system with real-time monitoring
 
-## Overview
+## 🗒️ Overview
 
 The Smart Adaptive Traffic Management System leverages AI and computer vision to optimize traffic flow at intersections. This system analyzes vehicle counts from video feeds, processes the data using machine learning models, and adjusts traffic signal timings to improve traffic flow.
 
-## Screenshots
+## 📸 Screenshots
 
 ![1](screenshots/1.png)
 ![2](screenshots/2.png)
 ![3](screenshots/3.png)
 
 
-## Features
+## ✨ Features
 - Vehicle Detection: Uses YOLOv4 for real-time vehicle detection from video feeds.
 - Traffic Optimization: Employs a genetic algorithm to determine optimal green light times based on vehicle counts.
 - Web Interface: Allows users to upload traffic videos, view processing results, and receive optimized traffic management recommendations.
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -27,7 +27,7 @@ The Smart Adaptive Traffic Management System leverages AI and computer vision to
 - YOLOv4 weights and configuration files
 - Required Python packages (listed in requirements.txt)
 
-## Local Setup
+## 💻 Local Setup
 
 Clone the repository:
 
@@ -50,10 +50,10 @@ cd frontend
 npm start
 ```
 
-Upload Traffic Videos:
+Upload Traffic Videos <br/>
 Use the web interface to upload 4 traffic videos. The system will process the videos and display optimized green light times based on the analysis.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - YOLOv4: For vehicle detection.
 - OpenCV: For video processing.
